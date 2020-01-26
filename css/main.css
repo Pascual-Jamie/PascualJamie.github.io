@@ -1,0 +1,49 @@
+/* BODY*/
+body {
+    background-color: #ff6961;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+}
+
+
+/* ITALISIZE COLOR*/
+i{
+    color: #9400d3;
+
+}
+   
+
+/* HEADER */
+header{
+    color: #8b0000;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+/* FOOTER */
+
+.return{
+    margin-top: 3em;
+    text-align: center;
+    
+}
+
+.return a{
+    padding: .9em;
+    background-color: #8b0000;
+    border-radius: 12px;
+    font-size: 1.20em;
+    color: #edeee9;
+}
+
+footer{
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+small{
+    display: block;
+    margin-top: 3em;
+}

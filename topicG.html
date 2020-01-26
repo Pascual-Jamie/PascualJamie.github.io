@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- the css stylesheets below are just main sheets nothing to do with js minipulation-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/topicG.css">
+    <title>CIT261 | Topic #7</title>
+</head>
+
+<body>
+
+    <header>
+        <h2 id="header"> Manipulating CSS Class Properties Using JavaScript</h2>
+        <hr>
+    </header>
+
+    <main id="changeC">
+
+        <p> We can do a lot of different manipulating the style properties using Javascript</p>
+
+        <p> The manipulation can affect different properties of a single sentence like the one below:</p>
+
+        <h3 id="head3"> This is an example of a change in sentence apperance. </h3>
+
+        <p>We can use the change to change a whole set when we use the word <i>class</i> attribute</p>
+        <p>Try each button below to look at how they change all the fields at the same time.</p>
+        <button class="reaper" type="button" onclick="styleForm()">Change</button>
+        <button class="reaper" type="button" onclick="unStyleForm()">Change Back</button>
+        <br><br>
+
+        <form>
+            <label class="info">Last Name: </label><input type="text" class="field" id="lastName" readonly><br><br>
+            <label class="info">First Name: </label><input type="text" class="field" id="firstName" readonly><br><br>
+            <label class="info">Age: </label><input type="text" class="field" id="age" readonly><br><br>
+            <label class="info">Gender: </label><input type="text" class="field" id="gender" readonly><br><br>
+
+        </form>
+        <br>
+        
+        <p>Next we are going to see a manipulation of a photo, when you hover over the thumbnail it will zoom in below.</p>
+        <img src="img/puppies.jpeg" title="Puppies" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><br><br>
+        <section id="bigPic"></section><br>
+        <p>Lastly we are going to show you how to style a whole list at the same time. Just click on the button to style the bullet points all at once.</p>
+        
+        <button class="reaper" type="button" onclick="styleList()">Change</button>
+         <button class="reaper" type="button" onclick="unStyleList()">Change Back</button>
+        
+        <ul>
+            <li class="struck">Friday the 13th</li>
+            <li class="struck">Friday the 13th Part II</li>
+            <li class="struck">Friday the 13th Part III</li>
+            <li class="struck">Friday the 13th The Final Chapter</li>
+            <li class="struck">Friday the 13th Part V</li>
+            <li class="struck">Friday the 13th Part VI</li>
+            <li class="struck">Friday the 13th Part VII</li>
+            <li class="struck">Friday the 13th Part VIII</li>
+        </ul>
+
+
+    </main>
+
+    <footer>
+        <hr>
+        <p class="return"><a href="CIT261.html">Return to main page</a></p>
+        <small>Created by Jamie Pascual</small>
+    </footer>
+
+    <script src="js/topicG.js"></script>
+
+</body>
+
+</html>
