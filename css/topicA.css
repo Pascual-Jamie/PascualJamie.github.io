@@ -31,10 +31,10 @@ span{
 }
 
 .field {
-    color:#000000;
+    color: #000000;
 }
 
-.check {
+button {
     
     padding: .65em 1.3em;
     border-style: ridge;
