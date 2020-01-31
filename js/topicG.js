@@ -1,3 +1,4 @@
+//this is for the sentence change color and size
 // targeting a single sentence, <h3>
 var header = document.getElementById('head3');
 
@@ -21,12 +22,14 @@ header.addEventListener('mouseout', function () {
 
 });
 
+//this is for the form input part
 //target the label tags
 var labels = document.querySelectorAll('.info');
 
 // target the imput information
 var fields = document.querySelectorAll('.field');
 
+//turns on the form changes
 function styleForm() {
 
     //set the style of the class
@@ -57,7 +60,7 @@ function styleForm() {
     }
 }
 
-
+//turns off the form changes
 function unStyleForm() {
 
 
@@ -73,6 +76,7 @@ function unStyleForm() {
 
 }
 
+//this is for the picture changes
 //select the pic you want to zoom
 var frame = document.getElementById('bigPic');
 
@@ -88,8 +92,8 @@ function zoomOut(element) {
     frame.style.backgroundImage = "";
 }
 
-
-//target the list elements
+//this is for the list changes
+//target the list elements, 
 
 var liss = document.querySelectorAll('.struck');
 
@@ -113,6 +117,7 @@ function styleList() {
     for (var i = 0; i < liss.length; i++) {
         liss[i].style.cssText = lissCSS;
     }
+    
 }
 //removing the style from lists
 function unStyleList() {

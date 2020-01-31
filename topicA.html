@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +18,40 @@
 
     <main>
 
+        <div id="sunshine">
+
+
+            <p>Lest do some basick math skills to show how to do all the items stated in the title.</p>
+            <p>After inputing the numbers and answer in the field click on <i>Click to see if Correct</i> to check to see if its correct. Click <i>Reset Numbers</i> to clear the fields.</p>
+            <p>You can pick any operator to enter it mannually or use your keyboard:
+                <button onclick="selectOperator('addition')" type="button" class="operatorS">+</button>
+                <button onclick="selectOperator('subtraction')"  class="operatorS">-</button>
+                <button onclick="selectOperator('multiplication')" type="button" class="operatorS">*</button>
+                <button onclick="selectOperator('division')" type="button" class="operatorS">/</button>
+                <button onclick="selectOperator('modulus')" type="button" class="operatorS">%</button>
+            </p>
+            
+            <form id="form">
+                <input type="text" placeholder="first number" id="firstOperand" class="field" required="required"> 
+                <input type="text" placeholder="operator" id="operator" class="fields" required="required"> 
+                <input type="text" placeholder="second number" id="secondOperand" class="field" required="required">
+                <span> = </span>
+                <input type="text" placeholder="Result" id="answer" class="field" required="required"><br><br>
+                
+                <button class="check" type="button" onclick="calcAndArray()">Click to see if Correct</button>
+                <button class="check" type="reset" onclick="reset()">Reset Numbers</button>
+            </form>
+
+            <p id="output">&nbsp;</p>
+            
+            <span>Correct answers here:&nbsp;&nbsp;</span><span id="arrayList"></span><br><br>
+            <span>Sum of array items:&nbsp;&nbsp;</span><span id="arraySum"></span><br><br>
+            <span>Product of array items:&nbsp;&nbsp;</span><span id="arrayProduct"></span><br><br>
+            <span>Total correct attempt fo far:&nbsp;&nbsp;</span><span id="attempts"></span><br><br>
+            <button class="check" type="button" onclick="logJournal()" >Log Journal</button>
+            <p id="logs"></p>
+        </div>
+
 
     </main>
     <footer>
@@ -25,5 +60,4 @@
         <small>Created by Jamie Pascual</small>
     </footer>
     <script src="js/topicA.js"></script>
-</body>
-</html>
+</body></html>
