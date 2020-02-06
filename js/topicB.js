@@ -15,7 +15,7 @@ function retrieve(){
             document.getElementById('factory3').value = buzz.provenance;
             break;
         case 'woody':
-            let woody = new toyConstructor("Sherrif Woody", "cowboy", "Toy Story");
+            let woody = new toyConstructor("Sheriff Woody", "cowboy", "Toy Story");
             document.getElementById('const1').value = woody.name;
             document.getElementById('const2').value = woody.allUpper();
             document.getElementById('const3').value = woody.provenance;
@@ -105,3 +105,5 @@ function proto(){
 function reset(){
     document.getElementsByClassName("field").reset();
 }
+
+
