@@ -1,0 +1,97 @@
+/* Topic 2 CSS */
+
+h3{
+    color: #800000;
+    font-size: 1.4em;
+    margin-top: 1.0em;
+}
+
+p{
+    color: #000080;
+    font-size: 1.2em;
+}
+
+div.reveal{
+    text-align: center;
+}
+
+div.flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+form{
+    margin: 0 0 1.3em;
+}
+
+fieldset{
+    width: 50em 25em;
+    border-radius: 40px 40px;
+    
+}
+
+fieldset button{
+    margin: .5em 35%;
+}
+
+legend{
+    font-size: 1.2em;
+    color: #8601af;
+}
+
+label{
+    display: inline-block;
+    width: 5em;
+    color: #000080;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+input{
+    padding: .9em;
+    width: 9em;
+    text-align: center;
+    border-radius: 40px 15px;
+    border-style: none;
+    font-size: 1.1em;
+    margin: .5em 0 0 .5em;
+    color: #2b4620;
+}
+
+input[type=text]:focus {
+    background-color: lightcyan;
+}
+
+.action {
+    background-color: #51484f;
+    border-style: none;
+    padding: .65em 1.3em;
+    border-radius: 15px;
+    font-size: 1em;
+    color: #ffd686;
+    cursor: pointer;
+}
+
+#list{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#list input{
+    cursor: pointer;
+    width: auto;
+    margin: 0 .5em 0;
+    padding: 0;
+}
+
+#list label{
+    width: auto;
+    margin-right: 1.5em;
+    text-align: left;
+}
+
+pre{
+    color: #644117;
+    font-size: 1.3em;
+}

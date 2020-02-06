@@ -17,6 +17,110 @@
 
     <main>
 
+        <p>In this page are shown all the object features stated in the title.</p>
+
+            <h3>Object Creation Patterns</h3>
+            <p>Each form below reveals a JavaScript object created through a different pattern.</p>
+            <p>Buzz Lightyear is created through a Factory creation function.</p>
+            <p>Sherrif Woody is created through a Constructor creation function.</p>
+            <p>Hamm is created from a Prototype creation function.</p>
+            <p>Please, select your favorite toy and then click <i>Reveal</i> :</p>
+
+            <form id="list" name="list">
+                <input type="radio" class="radio" name="toy" value="buzz" id="one"><label for="one">Buzz Lightyear</label>
+                <input type="radio" class="radio" name="toy" value="woody" id="two"><label for="two">Sherrif Woody</label>
+                <input type="radio" class="radio" name="toy" value="hamm" id="three"><label for="three">Hamm</label>
+            </form>
+            <br>
+            <div class="reveal">
+                <button class="action" type="button" onclick="retrieve()">Reveal</button><br><br>
+            </div>
+            <br>
+            <div class="flex">
+                <form>
+                    <fieldset>
+                        <legend>Factory Pattern</legend>
+                        <label>Name:</label><input type="text" class="field" id="factory1" readonly><br>
+                        <label>Toy:</label><input type="text" class="field" id="factory2" readonly><br>
+                        <label>Movie:</label><input type="text" class="field" id="factory3" readonly><br>
+                        <button class="action" type="reset" onclick="reset()">Reset</button>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset>
+                        <legend>Constructor Pattern</legend>
+                        <label>Name:</label><input type="text" class="field" id="const1" readonly><br>
+                        <label>Toy:</label><input type="text" class="field" id="const2" readonly><br>
+                        <label>Movie:</label><input type="text" class="field" id="const3" readonly><br>
+                        <button class="action" type="reset" onclick="reset()">Reset</button>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset>
+                        <legend>Prototype Pattern</legend>
+                        <label>Name:</label><input type="text" class="field" id="proto1" readonly><br>
+                        <label>Toy:</label><input type="text" class="field" id="proto2" readonly><br>
+                        <label>Movie:</label><input type="text" class="field" id="proto3" readonly><br>
+                        <button class="action" type="reset" onclick="reset()">Reset</button>
+                    </fieldset>
+                </form>
+            </div>
+
+        <h3>More about object Inheritance</h3>
+            <p>In JavaScript is possible to create an object from one or more existing objects.</p>
+            <p>The new object inherits the properties of the source object(s).</p>
+            <p>I am going to start with two parents object:</p>
+            <pre>
+var buzZ = { toyS:"Space Ranger", provenance:"Toy Story" };
+var weapon = { lazer:"Lazer", jetPack:"Jet Pack" };
+            </pre>
+            <p>The forms below show different ways to accomplish the task described.</p>
+            <p>In the first form a new object is created from Buzz (and it has additional properties).</p>
+            <p>In the second form is performed the same operation but using the spread operator.</p>
+            <p>In the third form a new object is created by combining Buzz and Weapon.</p>
+            <p>Click <i>Reveal</i> to generate a new object from the ones above.</p>
+
+            <div class="reveal">
+                <button class="action" type="button" onclick="proto()">Reveal</button><br><br>
+            </div>
+            <br>
+            <div class="flex">
+                <form>
+                    <fieldset>
+                        <legend>Object.create()</legend>
+                        <label>Name:</label><input type="text" class="field" id="create1" readonly><br>
+                        <label>Gender:</label><input type="text" class="field" id="create2" readonly><br>
+                        <label>Toy:</label><input type="text" class="field" id="create3" readonly><br>
+                        <label>Movie:</label><input type="text" class="field" id="create4" readonly><br>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset>
+                        <legend>Spread Operator</legend>
+                        <label>Name:</label><input type="text" class="field" id="spread1" readonly><br>
+                        <label>Gender:</label><input type="text" class="field" id="spread2" readonly><br>
+                        <label>Toy:</label><input type="text" class="field" id="spread3" readonly><br>
+                        <label>Movie:</label><input type="text" class="field" id="spread4" readonly><br>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset>
+                        <legend>Object.assign()</legend>
+                        <label>Name:</label><input type="text" class="field" id="assign1" readonly><br>
+                        <label>Toy:</label><input type="text" class="field" id="assign2" readonly><br>
+                        <label>Weapon 1:</label><input type="text" class="field" id="assign3" readonly><br>
+                        <label>Weapon 2:</label><input type="text" class="field" id="assign4" readonly><br>
+                    </fieldset>
+                </form>
+            </div>
+
+        
+        
+        
     </main>
 
     <footer>

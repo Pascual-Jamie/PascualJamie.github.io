@@ -51,7 +51,7 @@ function calcAndArray() {
         message = "Wrong Answer. Please Review your math.";
     }
 
-    //Array #1
+    //Associative Array #1
     var express = {
         "fo": a,
         "op": operator,
@@ -102,7 +102,7 @@ function calcAndArray() {
 
 function selectOperator(ide) {
 
-    // Array #2
+    // Associatiive Array #2
     var operators = {
         "addition": "+",
         "subtraction": "-",
