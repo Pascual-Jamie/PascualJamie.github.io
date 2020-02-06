@@ -17,7 +17,7 @@ cFir.lineTo(120, 50);
 cFir.lineTo(120, 100);
 cFir.lineTo(180, 100);
 cFir.lineTo(180, 50);
-cFir.strokeStyle = "#00ff7f";
+cFir.strokeStyle = "#ff1493";
 cFir.stroke();
 
 // draw some circles
