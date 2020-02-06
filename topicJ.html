@@ -15,21 +15,47 @@
         <hr>
     </header>
 
-    <main>
+    <main id="warlock">
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <div id="video">
+            
+             <p>The following video is instead an embedded YouTube video (iframe tag):</p>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/VAuz6mlqxNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <h3>Video tag</h3>
+            <p>The following video is played directly from a file:</p>
+            <video controls>
+                <source src="media/jellyfish.mp4" type="video/mp4">
+                If you can't play this video content, it means your browser does not support the video tag.
+            </video>
+
+           
+        </div>
+        <br>
+        <div>
+            <h3>Audio tag</h3>
+            <p>Kane Brown and Becky G sings <i>Lost in the Middle of Nowhere</i></p>
+            <audio controls controlsList="nodownload">
+                <source src="media/lostInMiddle.mp3" type="audio/mpeg">
+                If you can't play this audio content, it means your browser does not support the audio tag.
+            </audio>
+        </div>
+        <br>
+        <div>
+            <h3>Canvas</h3>
+            <p>The <i>Picture</i> tag is used to draw graphics within an HTML document.</p>
+            <p>However, JavaScript is necessary to create the graphics.</p>
+
+            <p>Let's start with some shapes:</p>
+            <canvas id="picture1">If you don't see colored shapes, it means your browser doesn't support HTML canvas</canvas>
+
+            <p>Let's continue with some text:</p>
+            <canvas id="picture2">If you don't see colored shapes, it means your browser doesn't support HTML canvas</canvas>
+
+        </div>
+        <br>
+   
     </main>
 
     <footer>

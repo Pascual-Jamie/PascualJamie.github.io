@@ -1,0 +1,21 @@
+/* topic 10*/
+
+h3{
+    color: #32174d;
+    font-size: 1.35em;
+}
+
+p{
+    color: #7f00ff;
+    font-size: 1.2em;
+}
+
+video, iframe, canvas{
+    width: 400px;
+    height: 255px;
+    border: 1px solid #32174d;
+}
+
+canvas{
+    font-family: 'Apple Chancery', cursive;
+}
