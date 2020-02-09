@@ -1,9 +1,12 @@
+<!-- topic #3-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/topicC.css">
     <title>CIT261 | Topic #3</title>
@@ -18,6 +21,69 @@
 
     <main>
 
+        <h3>Parse</h3>
+
+        <p>This section shows the conversion of a JSON string into a Javascript object.</p>
+        <p>Here is a string in JSON format:</p>
+        <pre id="jsString">
+{ "contacts":{"firstName":"Jamie",
+             "middleName":null,
+             "lastName":"Pascual",
+             "title":"Ms",
+             "gender":"Female",
+             "birthDay":"May 3",
+             "email":null,
+             "phone":"(269) 270-5019",
+             "address":{
+                 "street":"417 Abell Street",
+                 "city":"South Haven",
+                 "state":"MI", 
+                 "zipCode":49090}        
+              }
+}
+                </pre>
+
+        <p>Let's parse the string and fill the form below.</p>
+        <form>
+            <button class="action" type="button" onclick="parseJson()">Show Results</button>
+            <button class="action" type="reset" onclick="reset()">Clear Info</button><br><br>
+            <label>First Name:</label><input type="text" class="field" id="firstName" readonly><br>
+            <label>Last Name:</label><input type="text" class="field" id="lastName" readonly><br>
+            <label>Gender:</label><input type="text" class="field" id="gender" readonly><br>
+            <label>Birthday:</label><input type="text" class="field" id="birthDay" readonly><br>
+            <label>Street:</label><input type="text" class="field" id="street" readonly><br>
+            <label>City:</label><input type="text" class="field" id="city" readonly><br>
+            <label>State:</label><input type="text" class="field" id="state" readonly><br>
+            <label>Zip Code:</label><input type="text" class="field" id="zipCode" readonly><br>
+        </form>
+        <br>
+        <br>
+
+
+
+
+        <h3>Stringify</h3>
+
+        <p>Let's start by converting a Javascript object into a string.</p>
+        <p>Click to see a pre-formatted output of the converted object:</p>
+        <button class="action" type="button" onclick="stringIt()">Show Results</button>
+        <p class="out" id="outOne"><br><br><br><br><br><br><br><br><br><br></p>
+
+        <p>There are values in the original object that contain the word "Earths".</p>
+        <p>Let's stringify them with different values (keep an eye on "volume" and "surfaceArea"):</p>
+        <button class="action" type="button" onclick="replaceIt()">Show Results</button>
+        <p class="out" id="outTwo"><br><br><br><br><br><br><br><br><br><br></p>
+
+        <p>Lets do our last manipulation. Let's stringify just specific attributes from the original object.</p>
+        <p>Lets just put the "name", the "volume", and the "surfaceArea":</p>
+        <button class="action" type="button" onclick="filterIt()">Show Results</button>
+        <p class="out" id="outThree"><br><br><br><br></p>
+
+        <br>
+        <br>
+        <br>
+
+
     </main>
 
     <footer>
@@ -28,5 +94,4 @@
 
     <script src="js/topicC.js"></script>
 
-</body>
-</html>
+</body></html>

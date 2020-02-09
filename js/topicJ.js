@@ -1,7 +1,7 @@
 // topic 10 
 
 // target the first picture tag
-var cOne = document.getElementById('picture1');
+var cOne = document.getElementById("picture1");
 
 // set the context for picture #1
 var cFir = cOne.getContext('2d');
@@ -38,7 +38,7 @@ cFir.stroke();
 
 
 // target the second canvas
-var cTwo = document.getElementById('picture2');
+var cTwo = document.getElementById("picture2");
 
 // set the context for canvas #2
 var cSec = cTwo.getContext('2d');

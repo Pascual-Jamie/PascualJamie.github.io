@@ -1,0 +1,59 @@
+/* Topic 3 (C) css */
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    color: #800000;
+    font-size: 1.4em;
+    margin-top: 1.5em;
+}
+
+main {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* buttons */
+.action {
+    background-color: #000000;
+    border-style: none;
+    padding: .65em 1.3em;
+    border-radius: 25px 0 25px 0;
+    font-size: .95em;
+    color: #ffd686;
+    cursor: pointer;
+}
+
+p,
+label {
+    color: #2b4620;
+    font-size: 1.3em;
+}
+
+label {
+    display: inline-block;
+    width: 6em;
+}
+
+.out {
+    color: #800000;
+    font-size: 1.3em;
+}
+
+#jsString {
+    color: #800000;
+    font-size: 1.3em;
+}
+
+input {
+    padding: .6em;
+    text-align: center;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 1em;
+    margin: .5em 0 0 .5em;
+    color: #000000;
+}
