@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +18,61 @@
 
     <main>
 
+        <p>Each box shows a different transition effect.</p>
+        <p>Get ready to click or hover:</p>
+
+        <div class="flexy">
+
+            <div class="flipCard">
+                <p>Hover over to flip it</p>
+                <div id="box1" class="flipBox">
+                    <div class="flipFront">
+                         <img src="img/puppies.jpeg" style="width: 250px; height:240px">
+                    </div>
+                    <div class="flipBack">
+                        <img src="img/skyDark.jpeg" style="width: 250px; height:240px">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flexy2">
+                <p>Hover over the green stripe</p>
+                <div id="box2" class="container">
+                    <div class="spike" onmouseover="spike(this)" onmouseleave="back(this)"></div>
+                    <div class="spike" onmouseover="spike(this)" onmouseleave="back(this)"></div>
+                    <div class="spike" onmouseover="spike(this)" onmouseleave="back(this)"></div>
+                    <div class="spike" onmouseover="spike(this)" onmouseleave="back(this)"></div>
+                    <div class="spike" onmouseover="spike(this)" onmouseleave="back(this)"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flexy">
+            <div class="flexy2">
+                <p>Click in the box</p>
+                <div id="box3" class="container">
+                    <div class="curtain">
+                        <div class="curtainWrap">
+                            <input type="checkbox" checked id="checkbox">
+                            <div class="curtainPanel curtainPanel--top"></div>
+                            <div class="curtainOpen">
+                                <p>Faith is not so much something we believe; faith is something we live. (Joseph B. Wirthlin)</p>
+                            </div>
+                            <div class="curtainPanel curtainPanel--bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flexy2">
+                <p>Keep clicking the box</p>
+                <div id="box4" class="container"></div>
+            </div>
+
+        </div>
+
+
     </main>
 
     <footer>
@@ -28,4 +84,5 @@
     <script src="js/topicK.js"></script>
 
 </body>
+
 </html>

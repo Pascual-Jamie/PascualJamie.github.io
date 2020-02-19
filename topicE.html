@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,24 +8,95 @@
     <link rel="stylesheet" type="text/css" href="css/topicE.css">
     <title>CIT261 | Topic #5</title>
 </head>
-    <body>
 
-        <header>
-            <h2 id="header">Local Storage Storing and Retrieving Arrays, Associative Arrays, and Objects</h2>
-            <hr>
-        </header>
+<body>
 
-        <main>
-            
-        </main>
+    <header>
+        <h2 id="header">Local Storage Storing and Retrieving Arrays, Associative Arrays, and Objects</h2>
+        <hr>
+    </header>
 
-        <footer>
-            <hr>
-            <p class="return"><a href="CIT261.html">Return to main page</a></p>
-            <small>Created by Jamie Pascual</small>
-        </footer>
+    <main>
 
-       <script src="js/topicE.js"></script>
+        <div id="stayThere">
+            <p>This page shows how <i>Local Storage</i> works.</p>
+        </div>
 
-    </body>
+        <div id="before">
+            <h3>Step 1</h3>
+            <p>Let's begin by providing some information below:</p>
+            <form id="base">
+                <input type="text" placeholder="Full Name" id="fullName" class="field" required="required">
+                <input type="text" placeholder="Home Town" id="homeTown" class="field" required="required">
+                <input type="number" placeholder="Age" id="urAge" class="field" required="required">
+            </form>
+            <p>Click the button below to store these values in the local storage and to refresh the page.</p>
+            <button class="action" type="button" onclick="storeAndRefresh()">Store Info & Refresh</button>
+        </div>
+
+        <div id="after">
+            <h3>Step 2</h3>
+            <p>Now the page has been refreshed so let's see if the browser kept the values that we  provided.</p>
+            <p>Below there are three forms that will display the same information.</p>
+            <p>We will retrieve them from an Array, from an Associative Array and from an Object.</p>
+            <p>However, each form takes its values from a different JavaScript entity within the local storage.</p>
+            <button class="action" type="button" onclick="retrieve()">Retrieve</button><br><br>
+
+            <div id="flex">
+                <form>
+                    <fieldset>
+                        <legend>From an Array</legend>
+                        <label>Full Name:</label><input type="text" class="field" id="arr1" readonly><br>
+                        <label>Home Town:</label><input type="text" class="field" id="arr2" readonly><br>
+                        <label>Age:</label><input type="number" class="field" id="arr3" readonly><br>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset>
+                        <legend>From an Associative Array</legend>
+                        <label>Full Name:</label><input type="text" class="field" id="assArr1" readonly><br>
+                        <label>Home Town:</label><input type="text" class="field" id="assArr2" readonly><br>
+                        <label>Age:</label><input type="number" class="field" id="assArr3" readonly><br>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset>
+                        <legend>From an Object</legend>
+                        <label>Full Name:</label><input type="text" class="field" id="obj1" readonly><br>
+                        <label>Home Town:</label><input type="text" class="field" id="obj2" readonly><br>
+                        <label>Age:</label><input type="number" class="field" id="obj3" readonly><br>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <h3>Step 3</h3>
+            <p>Before leaving our page, let's empty the local storage and refresh the page once again.</p>
+            <button class="action" type="button" onclick="emptyLS()">Empty Storage</button><br><br>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <hr>
+        <p class="return"><a href="CIT261.html">Return to main page</a></p>
+        <small>Created by Jamie Pascual</small>
+    </footer>
+
+    <script src="js/topicE.js"></script>
+
+</body>
+
 </html>

@@ -1,0 +1,199 @@
+/* topic 11 */
+
+
+
+p {
+    color: #214fc6;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.flexy {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.flexy2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-items: center;
+}
+
+.flexy2 p {
+    margin-top: 1em;
+}
+
+
+
+/* -------------------------------BOX #1---------------------------- */
+
+.flipCard:hover .flipBox {
+    transform: rotateY(180deg);
+}
+
+.flipCard {
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    perspective: 800px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-items: center;
+}
+
+.flipCard p {
+    margin-top: 1em;
+}
+
+.flipBox {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    background: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.flipFront,
+.flipBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4169e1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flipFront p,
+.flipBack p {
+    color: #0c5460;
+}
+
+.flipFront {
+    z-index: 2;
+}
+
+.flipBack {
+    transform: rotateY(180deg);
+}
+
+
+/* -------------------------BOX #2 --------------------------------*/
+#box2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    background: #fdfd96;
+}
+
+.spike {
+    height: 20%;
+    width: 20%;
+    background: #26b046;
+    cursor: pointer;
+}
+
+.container {
+    height: 15em;
+    width: 15em;
+    background-color: #93b7d2;
+    margin: 0 .5em;
+}
+
+
+
+
+/* ---------------------BOX #3-------------------------------- */
+.curtain {
+    width: 15em;
+    height: 15em;
+    overflow: hidden;
+}
+
+.curtainWrap {
+    width: 15em;
+    height: 15em;
+}
+
+.curtainPanel {
+    background: #ffff00;
+    width: 15em;
+    height: 50%;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+.curtainOpen {
+    position: absolute;
+    z-index: 1;
+    width: 15em;
+    height: 15em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.curtainOpen p {
+    font-size: 1.25em;
+    font-family: 'Amatic SC', cursive;
+    color: #0c5460;
+    line-height: 2;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 21.5em;
+    height: 21.5em;
+    z-index: 5;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked ~ div.curtainPanel--top {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+input[type=checkbox]:checked ~ div.curtainPanel--bottom {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/* WHEN THE CHECKBOX IS CLEARED, MOVE THE LEFT CURTAIN TO THE TOP */
+.curtainPanel--top {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+/* WHEN THE CHECKBOX IS CLEARED, MOVE THE RIGHT CURTAIN TO THE BOTTOM */
+.curtainPanel--bottom {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+
+/* ---------------------------------BOX #4 ------------------------------------*/
+#box4 {
+    cursor: pointer;
+    background: #bdced2;
+}
