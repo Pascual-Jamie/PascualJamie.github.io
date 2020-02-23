@@ -17,6 +17,70 @@
 
     <main>
 
+        <p>Animations lets an elemant gradually change from one style to another.  You can change it as many times as you want.  To do this you use Keyframes, which hold what styles the element will have at certain times. The first one is without keyframes and the other three have keyframes.</p>
+        
+        
+        <div class="flexOne">
+            
+            <!--Box 1 -->
+            <div class="flex45">
+                <div>
+                    <button class="move" type="button" onclick="moveDown()">Down</button>
+                    <button class="move" type="button" onclick="backUp()">Up</button>
+                </div>
+                <div id="box1" class="container boxOne">
+                    <div id="translateMe"></div>
+                </div>
+                <p>Without keyframes</p>
+            </div>
+
+            <!--Box 2 -->
+            
+            <div class="flex45">
+                <div>
+                    <button id="startRoll" class="move" type="button" onclick="startRoll()">Start</button>
+                    <button id="stopRoll" class="move" type="button" onclick="stopRoll()">Stop</button>
+                </div>
+                <div id="box2" class="container boxTwo">
+                    <div id="rollMe"></div>
+                </div>
+                <p>With keyframes</p>
+            </div>
+            
+            <!--Box 3 -->
+
+            <div class="flex45">
+                <div>
+                    <button class="move" type="button" onclick="dimIn()">Fade In</button>
+                    <button class="move" type="button" onclick="dimOut()">Fade Out</button>
+                </div>
+                <div id="box3" class="container boxthree">
+                    <span id="text">Jamie</span>
+                </div>
+                <p>With keyframes</p>
+            </div>
+            
+            <!--Box 4 -->
+            
+            
+            <div class="flex45">
+                <div>
+                    <p>Onload trigger</p>
+                </div>
+                <div id="box4" class="container boxFour">
+                    <div class="bubble bubble-1"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="bubble bubble-3"></div>
+                    <div class="bubble bubble-4"></div>
+                </div>
+                <p>With keyframes</p>
+            </div>
+
+        </div>
+        
+        
+        
+     
     </main>
 
     <footer>
