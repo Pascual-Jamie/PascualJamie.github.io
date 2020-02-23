@@ -1,2 +1,48 @@
 /* ---------topic 12------- */
 
+h2{
+    text-align: center;
+}
+
+h3{
+    color: #800000;
+    font-size: 1.35em;
+}
+
+p{
+    color: #000000;
+    font-size: 1.2em;
+}
+
+div.flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.object{
+    width: 4.5em;
+}
+
+.bigger{
+    width: 8.5em;
+}
+
+div#wrapper{
+    padding-left: 3em;
+}
+
+div#textbox{
+    width: 5em;
+    height: 5em;
+    background-color: #800000;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #800000;
+}
+
+span{
+    color: #008080;
+}
