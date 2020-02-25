@@ -1,4 +1,9 @@
 /* BODY*/
+header, main, body{
+    max-width: 1400px;
+    margin: auto; /*centers on page*/
+}
+
 body {
     background-color: #ff6961;
     font-family: 'Montserrat', 'sans-serif';

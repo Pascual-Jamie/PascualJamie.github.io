@@ -118,3 +118,7 @@ window.onload = function() {
         bubbles[i].style.cssText = "animation: bubbleUp 3s linear infinite; animation-delay:" + (Math.floor(Math.random() * 4) + 1) +"s";
     }
 };
+
+
+
+/* ******************Example of Transforms******************* */
