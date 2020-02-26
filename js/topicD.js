@@ -1,20 +1,20 @@
 // ***********Topic 4 AJAX Requesting a JSON File************** */
 
 // create a variable to hold the html button item
-var btn = document.getElementById('btn');
+var butn = document.getElementById('butn');
 
 // add an event listener to the button
-btn.addEventListener('click', function () {
+butn.addEventListener('click', function () {
 
     // retrieve the value from the radio button checked
-    var city = document.forms.list.city.value;
+   // var city = document.forms.list.city.value;
 
 
     // create an instance of XMLHttpRequest
     var request = new XMLHttpRequest();
 
     // establish the connection
-    request.open('GET', 'https://api.weatherbit.io/v2.0/current?city_id=' + city + '&key=6e662e8988cd4c1fa9d3d9e9ccefa3ea');
+    request.open('GET', 'https://api.weatherbit.io/v2.0/current?city_id=4990729,5780993,4699066&key=6e662e8988cd4c1fa9d3d9e9ccefa3ea');
 
 
 
@@ -41,7 +41,7 @@ function fillHTMLelement(info) {
     var temperature = info.data[0].temp;
     var desc = info.data[0].weather.description;
 
-    document.getElementById('infoOne').innerHTML = city;
-    document.getElementById('infoTwo').innerHTML = temperature + " C&deg;";
-    document.getElementById('infoThree').innerHTML = desc;
+    document.getElementById('info1').innerHTML = city;
+    document.getElementById('info2').innerHTML = temperature + " C&deg;";
+    document.getElementById('info3').innerHTML = desc;
 }
