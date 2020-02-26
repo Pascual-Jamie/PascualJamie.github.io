@@ -1,10 +1,10 @@
 // ***********Topic 4 AJAX Requesting a JSON File************** */
 
 // create a variable to hold the html button item
-var butn = document.getElementById('butn');
+var btn = document.getElementById('btn');
 
 // add an event listener to the button
-butn.addEventListener('click', function () {
+btn.addEventListener('click', function () {
 
     // retrieve the value from the radio button checked
      var city = document.forms.list.city.value;
