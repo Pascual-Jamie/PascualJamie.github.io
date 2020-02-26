@@ -7,7 +7,7 @@ var butn = document.getElementById('butn');
 butn.addEventListener('click', function () {
 
     // retrieve the value from the radio button checked
-     var city = document.form.list.city.value;
+     var city = document.forms.list.city.value;
 
 
     // create an instance of XMLHttpRequest
