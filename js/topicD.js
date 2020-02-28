@@ -41,6 +41,6 @@ function fillHTMLelement(info) {
     var desc = info.data[0].weather.description;
 
     document.getElementById('info1').innerHTML = city;
-    document.getElementById('info2').innerHTML = temperature + " C&deg;";
+    document.getElementById('info2').innerHTML = temperature + " F&deg;";
     document.getElementById('info3').innerHTML = desc;
 }
