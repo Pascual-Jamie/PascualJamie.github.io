@@ -14,9 +14,8 @@ btn.addEventListener('click', function () {
     var rqt = new XMLHttpRequest();
 
     // establish the connection
-    rqt.open('GET', 'https://api.weatherbit.io/v2.0/current?city_id=' + city + '&key=6e662e8988cd4c1fa9d3d9e9ccefa3ea');
-
-
+    rqt.open('GET', 'https://api.weatherbit.io/v2.0/current?city=' + city + '&key=6e662e8988cd4c1fa9d3d9e9ccefa3ea', true);
+    
 
     // if the request is successfully completed, then go ahead
     rqt.onload = function () {
