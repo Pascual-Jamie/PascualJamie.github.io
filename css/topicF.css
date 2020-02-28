@@ -1,0 +1,151 @@
+/*  ***************topic 6 (F)************** */
+
+
+main {
+    margin: 2em 2em;
+}
+
+h2 {
+    text-align: center;
+    padding-top: .5em;
+}
+
+h3 {
+    color: #628395;
+    font-size: 1.35em;
+    text-align: center;
+}
+
+p {
+    color: #96897b;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.flexy {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.flexy2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2em;
+}
+
+.flexy3 p {
+    font-family: 'Amatic SC', cursive;
+    color: #0c5460;
+    font-size: 1.5em;
+    display: none;
+}
+
+.container {
+    height: 15em;
+    width: 15em;
+    background-color: #93b7d2;
+    margin: 0 .5em;
+}
+
+.flexy3 {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .3em;
+    overflow: scroll;
+}
+
+.action {
+    background-color: #96897b;
+    border-style: none;
+    padding: .65em 1.3em;
+    border-radius: 5px;
+    font-size: .95em;
+    color: #ffd686;
+    cursor: pointer;
+    margin: .5em 0;
+}
+
+/************************** Second Table***************** */
+
+th  {
+    padding: 0 1.3em 0 0;
+    text-align: justify-all;
+}
+
+td  {
+    padding: 0 1.5em 0 2.5em;
+    text-align: justify;
+}
+.sway {
+    border-style: grove;
+    border-radius: 3px;
+    box-sizing: content-box;
+
+}
+
+/* ************************FIRST CONTAINER***************************** */
+#box1 span {
+    display: block;
+    height: 4em;
+    width: 4em;
+    margin: .15em;
+    background: #0c3d5d;
+}
+
+/* *************************SECOND CONTAINER************************** */
+#box2 p {
+    box-sizing: border-box;
+    width: 4em;
+    height: 4em;
+    background: #ffad92;
+    display: block;
+    padding-top: 15%;
+}
+
+/* **************************THIRD CONTAINER************************** */
+#box3 {
+    background: #ff473a;
+    justify-content: center;
+}
+
+#box3 span {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+    color: #c6d6e2;
+}
+
+/* ***************************FOURTH CONTAINER***************************** */
+#box4 {
+    background: #ffad92;
+    padding: 0;
+}
+
+form {
+    text-align: center;
+}
+
+.field2 {
+    padding: .7em;
+    width: 9em;
+    text-align: center;
+    font-size: 1.1em;
+    margin: .5em 0 0 .5em;
+    background: #ffae93;
+    color: #8d8d8d;
+    border: solid 2px #8d8d8d;
+    outline: none;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.swap:focus {
+    background: #c4836d;
+    color: #ffffff;
+}

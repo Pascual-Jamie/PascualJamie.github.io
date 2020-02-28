@@ -17,6 +17,157 @@
 
     <main>
 
+        <!----- **************First Table****************** -->
+
+
+        <h3>Select an element to create:</h3>
+        <center>
+            <div id="div_content_1">
+                <select id="element_select">
+                    <option value="button">Button</option>
+                    <option value="label">Label</option>
+                    <option value="div">Div</option>
+                    <option value="a">link</option>
+                </select>
+                Add some text to it: <input class='sway' type="text" id="new_content">
+                <button id="create_element_button"> Create Element </button><br>
+                <div id="filling_div_1" style="height: 0px; width: 0px;"></div>
+
+                <div style="height: 30px;"></div>
+            </div>
+        </center>
+
+        <h3>Let's delete some rows...</h3>
+        <center>
+
+            <!----- **************Second Table****************** -->
+            <table>
+                <tr style="text-align: center">
+                    <td>Remove row at index: <input class='sway' id="index_selected" type="number" min="1" max="10"> <Button id="remove_row"> Remove </Button> </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <table id="names_table">
+                <tr>
+                    <th>Oldest Superheros Name</th>
+                    <th>Which Comic</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>The High</td>
+                    <td>WildStorm Comics</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Graymalkin</td>
+                    <td>Marvel Comics</td>
+                    <td>216</td>
+                </tr>
+                <tr>
+                    <td>Icon</td>
+                    <td>DC Comics</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Old Man Logan</td>
+                    <td>Marvel Comics</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Deadpool</td>
+                    <td>Marvel Comics</td>
+                    <td>1,000</td>
+                </tr>
+                <tr>
+                    <td>Zealot</td>
+                    <td>WildStorm Comics</td>
+                    <td>1,000-3,000</td>
+                </tr>
+                <tr>
+                    <td>Mr. Majestic</td>
+                    <td>WildStorm Comics</td>
+                    <td>3,216</td>
+                </tr>
+                <tr>
+                    <td>Superman Prime</td>
+                    <td>DC Comics</td>
+                    <td>80,000</td>
+                </tr>
+                <tr>
+                    <td>Thor</td>
+                    <td>Marvel Comics</td>
+                    <td>2,000-2,000,000</td>
+                </tr>
+                <tr>
+                    <td>Martian Manhunter</td>
+                    <td>DC Comics</td>
+                    <td>225,000,000</td>
+                </tr>
+            </table>
+        </center>
+
+        <br><br><br><br>
+        <!--**************************************Box one***************** -->
+        <div class="flexy">
+
+            <div class="flexy2">
+                <div>
+                    <button id="append" class="action" onclick="appChild()">Append Child</button>
+                </div>
+
+                <div id="box1" class="container flexy3">
+                    <p id="tip1"></p>
+                </div>
+
+                <div>
+                    <button id="remove" class="action" onclick="remChild()">Remove Child</button>
+                </div>
+            </div>
+            <!-- *********************************Box two *********************************-->
+            <div class="flexy2">
+                <div>
+                    <button id="replace" class="action" onclick="repChild()">Replace Child</button>
+                </div>
+                <div id="box2" class="container flexy3">
+                    <p id="tip2">Change Me</p>
+                </div>
+                <div>
+                    <button id="revert" class="action" onclick="revert()">Give it Back</button>
+                </div>
+            </div>
+            <!--********************************Box Three***************************** -->
+            <div class="flexy2">
+                <div>
+                    <button id="insert" class="action" onclick="insBefore()">Insert Before</button>
+                </div>
+                <div id="box3" class="container flexy3"><span id="tip3">&nbsp;are beautiful!</span></div>
+                <div>
+                    <button id="rem" class="action" onclick="remInsert()">Remove</button>
+                </div>
+            </div>
+            <!--*******************************Box Four********************************* -->
+            <div class="flexy2">
+                <div>
+                    <button id="" class="action" onclick="setAtt()">Set Attribute</button>
+                </div>
+                <div id="box4" class="container flexy3">
+                    <form>
+                        <input class="swap" type="text" placeholder="text field">
+                        <input class="swap" type="text" placeholder="text field">
+                        <input class="swap" type="text" placeholder="text field">
+                    </form>
+                </div>
+                <div>
+                    <button id="remo" class="action" onclick="remAtt()">Remove Attribute</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
     </main>
 
     <footer>
@@ -27,5 +178,4 @@
 
     <script src="js/topicF.js"></script>
 
-</body>
-</html>
+</body></html>
