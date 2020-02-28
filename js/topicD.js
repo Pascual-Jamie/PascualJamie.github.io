@@ -7,7 +7,7 @@ var btn = document.getElementById('btn');
 btn.addEventListener('click', function () {
 
     // retrieve the value from the radio button checked
-     var city = document.forms.list.city.value;
+    var city = document.forms.list.city.value;
 
 
     // create an instance of XMLHttpRequest
@@ -15,8 +15,8 @@ btn.addEventListener('click', function () {
 
     // establish the connection
     rqt.open('GET', 'https://api.weatherbit.io/v2.0/current?city=' + city + '&key=6e662e8988cd4c1fa9d3d9e9ccefa3ea', true);
-    
 
+    rqt.send();
     // if the request is successfully completed, then go ahead
     rqt.onload = function () {
 
@@ -30,7 +30,7 @@ btn.addEventListener('click', function () {
         fillHTMLelement(data);
     }
 
-    rqt.send();
+    
 });
 
 
