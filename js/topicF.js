@@ -44,7 +44,7 @@ window.onload = function() {
 
 
 
-// FIRST CONTAINER: APPEND CHILD & REMOVE CHILD
+// *********************FIRST CONTAINER: APPEND CHILD & REMOVE CHILD
 
 // target the container
 let box1 = document.getElementById('box1');
@@ -83,7 +83,7 @@ function remChild(){
 
 }
 
-// SECOND CONTAINER: REPLACE CHILD
+// ***********************SECOND CONTAINER: REPLACE CHILD
 let box2 = document.getElementById('box2');
 let tip2 = document.getElementById('tip2');
 
@@ -103,7 +103,7 @@ function revert(){
     box2.replaceChild(tip2,p);
 }
 
-// THIRD CONTAINER: INSERT BEFORE
+// ************************THIRD CONTAINER: INSERT BEFORE
 let box3 = document.getElementById('box3');
 let spanFrag = document.createElement('span');
 let spanTarget = document.getElementById('tip3');
@@ -130,7 +130,7 @@ function remInsert(){
     }
 }
 
-// FOURTH CONTAINER: SET/REMOVE ATTRIBUTE
+// ***************FOURTH CONTAINER: SET/REMOVE ATTRIBUTE
 
 let inputFields = document.querySelectorAll('input');
 
