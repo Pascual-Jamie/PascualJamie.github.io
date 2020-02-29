@@ -132,7 +132,7 @@ function remInsert(){
 
 // ***************FOURTH CONTAINER: SET/REMOVE ATTRIBUTE
 
-let inputFields = document.querySelectorAll('input');
+let inputFields = document.querySelectorAll('.swap');
 
 // add a class attribute to apply style configured in the CSS stylesheet
 function setAtt(){

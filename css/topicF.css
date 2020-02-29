@@ -84,7 +84,7 @@ td  {
     text-align: justify;
 }
 .sway {
-    border-style: double;
+    border-style:ridge;
     border-radius: 5px;
     box-sizing: content-box;
 }
