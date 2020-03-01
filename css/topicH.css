@@ -1,0 +1,281 @@
+/* **************************Topic 8 (H)************************** */
+
+
+main{
+    margin: 2em 2em;
+}
+
+h2{
+    text-align: center;
+    padding-top: .5em;
+}
+
+
+p{
+    color: #000000;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.flexy{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.container {
+    height: 15em;
+    width: 15em;
+    background-color: #ffe4e1;
+    margin-top: .5em ;
+}
+
+.container-one, .container-two, .container-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-four{
+    height: 25em;
+    width: 25em;
+    background: #40e0d0;
+}
+
+/* *******************Animation in the first and Second square ****************** */
+#morph {
+    height: 5em;
+    width: 5em;
+    background-color: #a2006d;
+    border-radius: 50%;
+}
+
+#morph-2 {
+    height: 5em;
+    width: 5em;
+    background-color: #5218fa;
+    border-radius: 50%;
+}
+
+@keyframes morphing-circle-square {
+    0% {
+        border-radius: 50%;
+        background-color: #c30062;}
+    50% {
+        border-radius: 0%;
+        background-color: #ffb6c1;
+        transform: rotate(0deg);
+    }
+    75% {
+        border-radius: 0%;
+        background-color: #ffb6c1;
+        transform: rotate(-90deg);
+    }
+    100% {
+        border-radius: 50%;
+        background-color: #c30062;
+        transform: rotate(-90deg);
+    }
+}
+
+/* ******************************Animation in the Third square****************** */
+div#box2{
+    z-index: 2;
+    cursor: pointer;
+}
+
+.half-circle {
+    height: 5em;
+    width: 2.5em;
+    background-color: #0000cd;
+}
+
+@keyframes left-half {
+    0% {
+        transform: translate(0%);
+    }
+    25% {
+        transform: translate(0%);
+    }
+    30% {
+        transform: translate(-10%);
+    }
+    40% {
+        transform: translate(-25%);
+    }
+    50% {
+        transform: translate(-50%);
+    }
+    70% {
+        transform: translate(-50%);
+    }
+    80% {
+        transform: translate(-25%);
+    }
+    90% {
+        transform: translate(-10%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+.left {
+    border-bottom-left-radius: 5em;
+    border-top-left-radius: 5em;
+}
+
+@keyframes right-half {
+    0% {
+        transform: translate(0%);
+    }
+    25% {
+        transform: translate(0%);
+    }
+    30% {
+        transform: translate(10%);
+    }
+    40% {
+        transform: translate(25%);
+    }
+    50% {
+        transform: translate(50%);
+    }
+    70% {
+        transform: translate(50%);
+    }
+    80% {
+        transform: translate(25%);
+    }
+    90% {
+        transform: translate(10%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+.right {
+    border-bottom-right-radius: 5em;
+    border-top-right-radius: 5em;
+}
+
+/* *****************************Animation in the Fourth square***************** */
+
+#pulse{
+    height: 5em;
+    width: 5em;
+    background-color: #69359c;
+    border-radius: 50%;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(1);
+    }
+    46% {
+        transform: scale(1.55);
+    }
+    47% {
+        transform: scale(1);
+    }
+    59% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.35);
+    }
+    61% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ******************Fifth Box Settings********************
+ ******************Sliding side menu style settings********************/
+.sidenav {
+    position: relative;
+    height: 24em;
+    width: 14em;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.menu-icon {
+    display: inline-block;
+    padding: .5em .5em;
+    width: 100%;
+    height: 24em;
+    transition: .5s ease-in-out;
+}
+
+.bars {
+    cursor: pointer;
+    width: 4em;
+}
+.bars:hover div {
+    background-color: #9f0050;
+}
+
+.nav {
+    display: block;
+    margin-top: 4em;
+}
+
+.menu-link {
+    display: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #9932cc;
+    margin: 1em 2em;
+}
+.menu-link:hover {
+    color: white;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 3.5em;
+    height: .4em;
+    background-color: #9932cc;
+    margin-top: .4em;
+    border-radius: .2em;
+    transition: .1s ease-in-out;
+}
+
+.open .bar1 {
+    position: absolute;
+    right: 0;
+    transform: rotate(-45deg) translate(-0.45em, 0.55em);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    position: absolute;
+    right: 0;
+    transform: rotate(45deg) translate(0.3em, 0.15em);
+}
+
+.open .bars:hover div {
+    background-color: white;
+}
+
+.open .menu-icon {
+    height: 24em;
+    width: 14em;
+    background-color: #eee8aa;
+}
+
+.open a {
+    display: block;
+}

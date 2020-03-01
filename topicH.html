@@ -17,6 +17,77 @@
     </header>
 
     <main>
+        
+         <!-- **************************First  Box ************************* -->
+        <p>The circle within this boxes will change color and position while hovering over it.</p>
+        <p>However, the left box triggers an animation while the right one triggers a transition:</p>
+        <div class="flexy">
+            <div id="box1" class="container container-one">
+                <div id="morph"></div>
+            </div>
+            
+           <!-- **************************Second  Box ************************* --> 
+            <div id="box1-2" class="container container-one">
+                <div id="morph-2"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        
+         <!-- **************************Third Box ************************* -->
+        
+        <p>The circle within this box will split in halves while hovering over its container:</p>
+        <div class="flexy">
+            <div id="box2" class="container container-two">
+                <div id="left" class="half-circle left"></div>
+                <div id="right" class="half-circle right"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        
+         <!-- **************************Fourth Box ************************* -->
+        
+        <p>The circle within this box will pulse while hovering over it:</p>
+        <div class="flexy">
+            <div class="container container-three">
+                <div id="pulse" class="pulsing-circle"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        
+        <!-- **************************Side menu Box ************************* -->
+        
+        <p>The following box embed an example of sliding in/out side menu. Click on the hamburger menu icon:</p>
+        <p></p>
+        <div class="flexy">
+            <div class="container container-four">               
+                <div class="sidenav" id="menu-icon" onclick="toggleNav()">                    
+                    <div class="menu-icon" id="stay-there">                       
+                        <div class="bars">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        
+                        <div class="nav">
+                            <a class="menu-link" href="#">One</a>
+                            <a class="menu-link" href="#">Two</a>
+                            <a class="menu-link" href="#">Three</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
 
     </main>
 
@@ -28,5 +99,4 @@
 
     <script src="js/topicH.js"></script>
 
-</body>
-</html>
+</body></html>
