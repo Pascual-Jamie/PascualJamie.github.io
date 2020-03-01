@@ -71,22 +71,22 @@ function bKey() {
     bPress.classList.add('playing');
 }
 
-function c1Key() {
-    const c1Press = document.getElementById('c1');
-    let c1 = new Audio();
-    c1.src = "media/pianoC.wav";
-    if (!c1) return;
-    c1.currentTime = 0;
-    c1.play();
-    c1Press.classList.add('playing');
+function cKey() {
+    const cPress = document.getElementById('c');
+    let c = new Audio();
+    c.src = "media/pianoC.wav";
+    if (!c) return;
+    c.currentTime = 0;
+    c.play();
+    cPress.classList.add('playing');
 }
 
-function d2Key() {
-    const d2Press = document.getElementById('d2');
-    let d2 = new Audio();
-    d2.src = "media/pianoD.wav";
-    if (!d2) return;
-    d2.currentTime = 0;
-    d2.play();
-    d2Press.classList.add('playing');
+function dKey() {
+    const dPress = document.getElementById('d');
+    let d = new Audio();
+    d.src = "media/pianoD.wav";
+    if (!d) return;
+    d.currentTime = 0;
+    d.play();
+    dPress.classList.add('playing');
 }
