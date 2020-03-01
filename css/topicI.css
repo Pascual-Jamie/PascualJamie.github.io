@@ -1,0 +1,91 @@
+/* *******************************topic 9(I)*************************** */
+
+
+html {
+  font-size: 10px;
+  background: url(../img/pianoKeys.jpeg) bottom center;
+  background-size: cover;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+/* HEADER */
+header{
+    color: #8b0000;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #c0000c;
+  box-shadow: 0 0 1rem #c0000c;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ff000d;
+}
+
+/* FOOTER */
+
+.return{
+    margin-top: 3em;
+    text-align: center;
+    
+}
+
+.return a{
+    padding: .9em;
+    background-color: #8b0000;
+    border-radius: 12px;
+    font-size: 1.20em;
+    color: #edeee9;
+}
+
+footer{
+    text-align: center;
+    font-size: 18px;
+    color: #8b0000;
+}
+
+small{
+    display: block;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+    
