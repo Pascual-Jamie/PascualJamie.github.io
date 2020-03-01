@@ -3,7 +3,7 @@
 
 html {
   font-size: 10px;
-  background: url("img/pianoKeys.jpeg") bottom center;
+  background: url(../img/pianoKeys.jpeg) no-repeat bottom center;
   background-size: cover;
 }
 body,html {
