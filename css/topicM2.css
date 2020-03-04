@@ -12,9 +12,19 @@ body {
     color: #333;
 }
 
+
+h3 {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 2em;
+
+}
+
 a {
     color: #555;
     text-decoration: none;
+    
 }
 
 .container {
@@ -287,6 +297,6 @@ footer {
     text-align: center;
     font-size: 18px;
     position: center;
-   
-    
+
+
 }
