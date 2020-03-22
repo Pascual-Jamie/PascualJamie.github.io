@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Planetarium</title>
+
+    <!-- Link to custom Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+    <!-- style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/planetarium.css">
+</head>
+
+<body>
+
+    <audio src="media/bgsong.mp3" id="bgsong" loop autoplay="autoplay" hidden volume="0.4" preload="auto"></audio>
+
+    <div id="overNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+        <div class="overlay-content">
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Adrastea</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Aegaeon</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Aegir</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Aitne</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Albiorix</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Amalthea</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Ananke</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Anthe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Aoede</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Arche</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Ariel</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Atlas</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Autonoe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Bebhionn</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Belinda</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Bergelmir</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Bestla</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Bianca</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Caliban</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Callirrhoe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Callisto</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Calypso</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Carme</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Carpo</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Chaldene</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Charon</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Cordelia</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Cressida</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Cupid</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Cyllene</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Daphnis</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Deimos</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Desdemona</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Despina</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Dione</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Earth</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Elara</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Enceladus</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Epimetheus</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Erinome</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Erriapus</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Euanthe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Eukelade</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Euporie</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Europa</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Eurydome</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Farbauti</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Fenrir</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Ferdinand</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Fornjot</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Francisco</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Galatea</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Ganymede</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Greip</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Halimede</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Harpalyke</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Hati</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Hegemone</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Helene</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Helike</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Hermippe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Herse</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Himalia</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Hippocamp</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Hydra</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Hyperion</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Hyrrokkin</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Iapetus</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Ijiraq</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Io</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Iocaste</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Isonoe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Janus</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Jarnsaxa</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Juliet</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Jupiter</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Kale</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Kallichore</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Kalyke</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Kari</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Kiviuq</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Kore</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Laomedeia</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Larissa</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Leda</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Loge</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Lysithea</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Mab</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Margaret</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Mars</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Megaclite</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Mercury</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Methone</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Metis</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Mimas</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Miranda</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Mneme</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Moon</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Mundilfari</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Naiad</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Narvi</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Neptune</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Nereid</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Neso</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Nix</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Oberon</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Ophelia</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Orthosie</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Paaliaq</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Pallene</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Pan</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Pandora</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Pasiphae</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Pasithee</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Perdita</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Phobos</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Phoebe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Pluto</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Polydeuces</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Portia</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Praxidike</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Prometheus</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Prospero</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Proteus</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Psamathe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Puck</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Rhea</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Rosalind</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J10</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J12</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J15</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J16</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J18</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J19</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J2</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J23</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J3</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J4</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J5</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2003 J9</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2004 S12</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2004 S13</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2004 S17</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2004 S7</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2006 S1</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2006 S3</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2007 S2</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2007 S3</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">S/2009 S1</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Sao</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Saturn</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Setebos</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Siarnaq</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Sinope</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Skathi</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Skoll</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Sponde</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Stephano</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Sun</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Surtur</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Suttungr</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Sycorax</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Tarqeq</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Tarvos</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Taygete</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Telesto</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Tethys</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Thalassa</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">The Little Prince</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Thebe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Thelxinoe</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Themisto</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Thrymr</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Thyone</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Titan</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Titania</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Trinculo</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Triton</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Umbriel</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Uranus</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Venus</span>
+            <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Ymir</span>
+        </div>
+    </div>
+
+
+    <div class="sectionOne">
+        <a href="planetarium.html">
+            <div id="logo" class="logo"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-astronaut" class="svg-inline--fa fa-user-astronaut fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="#fff" d="M64 224h13.5c24.7 56.5 80.9 96 146.5 96s121.8-39.5 146.5-96H384c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-13.5C345.8 39.5 289.6 0 224 0S102.2 39.5 77.5 96H64c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zm40-88c0-22.1 21.5-40 48-40h144c26.5 0 48 17.9 48 40v24c0 53-43 96-96 96h-48c-53 0-96-43-96-96v-24zm72 72l12-36 36-12-36-12-12-36-12 36-36 12 36 12 12 36zm151.6 113.4C297.7 340.7 262.2 352 224 352s-73.7-11.3-103.6-30.6C52.9 328.5 0 385 0 454.4v9.6c0 26.5 21.5 48 48 48h80v-64c0-17.7 14.3-32 32-32h128c17.7 0 32 14.3 32 32v64h80c26.5 0 48-21.5 48-48v-9.6c0-69.4-52.9-125.9-120.4-133zM272 448c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8 0-16 7.2-16 16v48h32v-48c0-8.8-7.2-16-16-16z"></path>
+                </svg></div>
+        </a>
+        <div id="openBtn" class="menu"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="#fff" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+            </svg></div>
+
+        <h1>PLANETARIUM</h1>
+        <h3>The Solar System in Your Pocket</h3>
+
+        <div class="search-box">
+
+            <input id='input' class='select' spellcheck="false" type="text" placeholder="Enter a Heavenly Body&nbsp;&nbsp;&#10036;" onfocus="this.placeholder=''" onblur="this.placeholder='Enter a Heavenly Body&nbsp;&nbsp;&#10036;'">
+
+
+            <div class="search-wrapper" title="Search Me!">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="#ffffff" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                </svg>
+            </div>
+
+
+        </div>
+        <div>
+            <p id="hint">...or click the menu icon to select one</p>
+        </div>
+
+        <div id="bottomBtn">
+            <a href="#display-response"><svg id="bottom" name="bottom" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-down" class="svg-inline--fa fa-arrow-circle-down fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="#fff" d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"></path>
+                </svg></a>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div id="display-response" class="sectionTwo">
+
+        <div class="tile">
+            <canvas id="sky"></canvas>
+            <div class="front">
+                <p id="body-name">Name</p>
+            </div>
+        </div>
+
+        <div class="tile" onclick="flip(this)" ontouchstart="flip(this)">
+            <div class="front">
+                <p>General Info</p>
+                <p>(Click or Tap me)</p>
+            </div>
+            <div class="back general"></div>
+        </div>
+
+        <div class="tile" onclick="flip(this)" ontouchstart="flip(this)">
+            <div class="front">
+                <p>Orbital Parameters</p>
+                <p>(Click or Tap me)</p>
+            </div>
+            <div class="back orbital"></div>
+        </div>
+
+        <div class="tile last" onclick="flip(this)" ontouchstart="flip(this)">
+            <div class="front">
+                <p>Physical Characteristics</p>
+                <p>(Click or Tap me)</p>
+            </div>
+            <div class="back physical"></div>
+        </div>
+
+    </div>
+    <script src="js/planetarium.js"></script>
+    <script>
+        let bgsong = document.getElementById('bgsong');
+        bgsong.play();
+        bgsong.volume = 0.5;
+
+    </script>
+
+</body>
+
+</html>
