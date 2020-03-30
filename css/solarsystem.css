@@ -7,9 +7,9 @@ html{
 }
 
 body{
-    background: #F3904F;
-    background: -webkit-linear-gradient(to right, #3B4371, #F3904F);
-    background: linear-gradient(75deg, #3B4371 0%, #F3904F 100%);
+    background: #f08080;
+    background: -webkit-linear-gradient(to right, #008080, #f08080);
+    background: linear-gradient(55deg, #008080 0%, #f08080 85%);
     border: 0;
 
     /* this is necessary so the gradient background will stretch right to the bottom when scaling to mobile screens */
@@ -165,9 +165,9 @@ span{
     height: 2em;
     width: 5.5em;
     margin: .5em;
-    background: #F3904F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(75deg, #3B4371 0%, #F3904F 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #f08080;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #008080, #f08080);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(55deg, #008080 0%, #f08080 85%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-top: .35em;
     cursor: pointer;
     color: #ffd600;
