@@ -85,7 +85,7 @@ body{
 h1{
     color: white;
     text-align: center;
-    font-family: 'Gotu', cursive;
+    font-family: 'Gotu', monospace;
     font-size: 4em;
     letter-spacing: .1em;
     margin:0;
@@ -96,7 +96,7 @@ h3{
     color: white;
     font-size:1.5em;
     margin: 0 0 2.5em;
-    font-family: 'Gotu', cursive;
+    font-family: 'Gotu', monospace;
     text-align: center;
 }
 
@@ -170,9 +170,9 @@ span{
     background: linear-gradient(55deg, #008080 0%, #f08080 85%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-top: .35em;
     cursor: pointer;
-    color: #ffd600;
-    font-family: 'Gotu', cursive;
-    font-size: 1.5em;
+    color: #a50b5e;
+    font-family: 'Gotu', monospace;
+    font-size: 2.0em;
 }
 
 
@@ -190,11 +190,11 @@ input{
     width: 16em;
     height: 2.75em;
     background: transparent;
-    font-family: 'Josefin Sans', cursive;
+    font-family: 'Josefin Sans', monospace;
     font-size:1.6em;
     letter-spacing: .25em;
     padding-left: .5em;
-    color: #ffd600;
+    color: #a50b5e;
     box-sizing: border-box;
     border: solid 1px #C2C2C2;
     text-align:center;
@@ -204,7 +204,7 @@ input{
 }
 
 input::placeholder{
-    color: #ffd600;
+    color: #a50b5e;
 }
 
 input::-webkit-calendar-picker-indicator {
@@ -225,9 +225,9 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 0;
     padding-top: .25em;
     text-align: center;
-    font-family: 'Josefin Sans', cursive;
+    font-family: 'Josefin Sans', monospace;
     font-size:1.6em;
-    color: #ffd600;
+    color: #a50b5e;
     letter-spacing: .1em;
 }
 
@@ -295,8 +295,8 @@ svg#bottom{
     justify-content: center;
     margin: 0;
     padding: 0;
-    font-family: 'Josefin Sans', cursive;
-    color: white;
+    font-family: 'Josefin Sans', monospace;
+    color: lightgoldenrodyellow;
     letter-spacing: .1em;
     background: rgba(63, 67, 75, 0.4);
     -webkit-box-shadow: 0px 0px 7px 3px rgba(255,214,0,1);
@@ -332,18 +332,18 @@ svg#bottom{
     padding: 0.125em;
     font-size: 1.6em;
     margin: 0;
-    color: #FFD600;
+    color: #a50b5e;
 }
 
 .back *+*{
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 
 
 #body-name{
-    font-family: 'Gotu', cursive;
+    font-family: 'Gotu', monospace;
     font-size: 5em;
-    color: #FFD600;
+    color: #a50b5e;
 }
 
 
@@ -353,11 +353,11 @@ svg#bottom{
 @media only screen and (max-width: 700px) {
 
     h1{
-        font-size: 3.25em;
+        font-size: 3.5em;
     }
 
     h3{
-        font-size: 1.75em;
+        font-size: 1.90em;
     }
 }
 
@@ -376,19 +376,19 @@ svg#bottom{
 @media only screen and (max-width: 500px) {
 
     .search-box{
-        font-size: 2.75vw;
+        font-size: 2.80vw;
     }
 
     #hint{
-        font-size: 4.5vw;
+        font-size: 4.75vw;
     }
 
     h1{
-        font-size: 8.25vw;
+        font-size: 8.5vw;
     }
 
     h3{
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 
     span{
@@ -396,14 +396,14 @@ svg#bottom{
     }
 
     body{
-        height: 100vh;
+        height: 120vh;
     }
 
     #body-name {
-        font-size: 3.5em;
+        font-size: 3.75em;
     }
 
     .general p{
-        font-size: 1.4em;
+        font-size: 1.8em;
     }
 }
