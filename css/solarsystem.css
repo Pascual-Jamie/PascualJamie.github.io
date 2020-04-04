@@ -131,7 +131,7 @@ h3{
 }
 
 .overlay p {
-    color: #a50b5e;
+    color: white;
     font-family: 'Gotu', monospace;
     font-size: 2.0em;
     text-align: center;
@@ -304,7 +304,7 @@ svg#bottom{
     font-family: 'Josefin Sans', monospace;
     color: #a50b5e;
     letter-spacing: .1em;
-    background: rgba(50, 110, 230, 0.5);
+    background: rgba(30, 120, 250, 0.3);
     -webkit-box-shadow: 0px 0px 7px 3px rgba(255,214,0,1);
     -moz-box-shadow: 0px 0px 7px 3px rgba(255,214,0,1);
     box-shadow: 0px 0px 7px 3px rgba(255,214,0,1);
@@ -338,7 +338,7 @@ svg#bottom{
     padding: 0.125em;
     font-size: 1.6em;
     margin: 0;
-    color: #722f37;
+    color: #ffffff;
 }
 
 .back *+*{
