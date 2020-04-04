@@ -170,6 +170,8 @@ function fillHTMLelement(jstring){
     let generalBox = document.querySelector('.general');
 
     // organize the data
+    
+    
     if(jstring.englishName == "Sun"){
             let p = document.createElement('p');
             generalBox.appendChild(p).innerHTML = "The Sun is the star at the center of the Solar System. It is by far the most important source of energy for life on Earth. ";
@@ -257,10 +259,10 @@ function fillHTMLelement(jstring){
 
 /* Function to flip the tiles on click */
 
-function flip(el){
+function flip(el) {
     el.style.cssText = "transform: rotateY(180deg); transition: transform .4s linear .2s";
 }
 
-function tapFlip(el){
+function tapFlip(el) {
     el.style.cssText = "transform: rotateY(180deg); transition: transform .4s linear .2s";
 }
