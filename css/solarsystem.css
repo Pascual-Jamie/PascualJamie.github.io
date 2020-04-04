@@ -85,7 +85,7 @@ body{
 h1{
     color: white;
     text-align: center;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Gotu', cursive;
     font-size: 4em;
     letter-spacing: .1em;
     margin:0;
@@ -96,7 +96,7 @@ h3{
     color: white;
     font-size:1.5em;
     margin: 0 0 2.5em;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Gotu', cursive;
     text-align: center;
 }
 
@@ -163,7 +163,7 @@ span{
     box-sizing: border-box;
     display: block;
     height: 2em;
-    width: 5.5em;
+    width: 8em;
     margin: .5em;
     background: #f08080;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #008080, #f08080);  /* Chrome 10-25, Safari 5.1-6 */
@@ -171,8 +171,8 @@ span{
     padding-top: .35em;
     cursor: pointer;
     color: #ffd600;
-    font-family: 'Amatic SC', cursive;
-    font-size: 2em;
+    font-family: 'Gotu', cursive;
+    font-size: 1.5em;
 }
 
 
@@ -190,7 +190,7 @@ input{
     width: 16em;
     height: 2.75em;
     background: transparent;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Josefin Sans', cursive;
     font-size:1.6em;
     letter-spacing: .25em;
     padding-left: .5em;
@@ -225,7 +225,7 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 0;
     padding-top: .25em;
     text-align: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Josefin Sans', cursive;
     font-size:1.6em;
     color: #ffd600;
     letter-spacing: .1em;
@@ -295,7 +295,7 @@ svg#bottom{
     justify-content: center;
     margin: 0;
     padding: 0;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Josefin Sans', cursive;
     color: white;
     letter-spacing: .1em;
     background: rgba(63, 67, 75, 0.4);
@@ -341,7 +341,7 @@ svg#bottom{
 
 
 #body-name{
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Gotu', cursive;
     font-size: 5em;
     color: #FFD600;
 }
