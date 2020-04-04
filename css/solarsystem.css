@@ -130,6 +130,12 @@ h3{
     overflow: scroll;
 }
 
+.overlay p {
+    color: #a50b5e;
+    font-family: 'Gotu', monospace;
+    font-size: 2.0em;
+    text-align: center;
+}
 .overlay a {
     text-decoration: none;
     font-size: 36px;
@@ -271,8 +277,8 @@ svg#bottom{
     display: block;
     position: relative;
     margin: .5em;
-    height: 14em;
-    width: 30em;
+    height: 18em;
+    width: 34em;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -webkit-perspective: 90px;
@@ -298,7 +304,7 @@ svg#bottom{
     font-family: 'Josefin Sans', monospace;
     color: #a50b5e;
     letter-spacing: .1em;
-    background: rgba(88, 87, 100, 0.6);
+    background: rgba(50, 110, 230, 0.5);
     -webkit-box-shadow: 0px 0px 7px 3px rgba(255,214,0,1);
     -moz-box-shadow: 0px 0px 7px 3px rgba(255,214,0,1);
     box-shadow: 0px 0px 7px 3px rgba(255,214,0,1);
@@ -332,7 +338,7 @@ svg#bottom{
     padding: 0.125em;
     font-size: 1.6em;
     margin: 0;
-    color: #a50b5e;
+    color: #722f37;
 }
 
 .back *+*{

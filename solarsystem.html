@@ -16,7 +16,10 @@
 
     <audio src="media/bgsong.wav" id="bgsong" loop autoplay="autoplay" hidden volume="0.4" preload="auto"></audio>
 
+    <!-- List Page -->
+    
     <div id="overNav" class="overlay">
+        <p>Please choose one from the list below</p>
         <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
         <div class="overlay-content">
             <span class="span-selection" onmouseover="scale(this)" onmouseout="unscale(this)" onclick="insert(this)">Adrastea</span>
@@ -204,7 +207,8 @@
         </div>
     </div>
 
-
+   <!-- Main Page -->
+    
     <div class="sectionOne">
         <a href="CIT261.html">
             <div id="logo" class="logo"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-astronaut" class="svg-inline--fa fa-user-astronaut fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -214,7 +218,9 @@
         <div id="openBtn" class="menu"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path fill="#fff" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
             </svg></div>
-
+        
+    
+        
         <h1>SOLAR SYSTEM</h1>
         <h3>The Solar System in Your Pocket</h3>
 
@@ -243,6 +249,9 @@
     </div>
 
     <!-- Section 2 -->
+   
+    
+    <!-- Title Box -->
     <div id="display-response" class="sectionTwo">
 
         <div class="tile">
@@ -252,6 +261,7 @@
             </div>
         </div>
 
+       <!-- General Info box -->
         <div class="tile" onclick="flip(this)" ontouchstart="flip(this)">
             <div class="front">
                 <p>General Info</p>
@@ -260,6 +270,7 @@
             <div class="back general"></div>
         </div>
 
+       <!-- Orbital Parameters Box-->
         <div class="tile" onclick="flip(this)" ontouchstart="flip(this)">
             <div class="front">
                 <p>Orbital Parameters</p>
@@ -268,6 +279,7 @@
             <div class="back orbital"></div>
         </div>
 
+       <!-- Physical Characteristics Box -->
         <div class="tile last" onclick="flip(this)" ontouchstart="flip(this)">
             <div class="front">
                 <p>Physical Characteristics</p>
